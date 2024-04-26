@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:38:11 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/26 23:47:30 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/27 00:12:29 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ class ClapTrap {
  public:
   ClapTrap();
   ClapTrap(const std::string& newName);
+  ClapTrap(const ClapTrap& other);
+  ClapTrap& operator=(const ClapTrap& other);
   virtual ~ClapTrap();
   int getEnergyPoints() const;
   virtual void attack(const std::string& target);
