@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 22:59:03 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/26 23:29:24 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/27 00:05:20 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ ScavTrap::ScavTrap() : ClapTrap("Default") {
             << RESET << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string& newName) : ClapTrap(newName) {
+ScavTrap::ScavTrap(const std::string& newName) : ClapTrap(newName) {
   _hitpoints = 100;
   _energyPoints = 50;
   _attackDamage = 20;
@@ -48,4 +48,10 @@ void ScavTrap::attack(const std::string& target)
     std::cout << PURPLE "ScavTrap " << _name << RESET \
     << " will go take a nap." << std::endl;
   }
+}
+void ScavTrap::guardGate() {
+  std::cout << PURPLE "ScavTrap " << _name \
+            << RESET << " has entered in " \
+            << "\033[1;96mGatekeeper Mode🛡️\n" \
+            << RESET << std::endl;
 }
