@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:38:11 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/27 00:12:29 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/27 00:38:08 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@
 # define CYAN "\033[1;36m"
 /*ScavTrap*/
 # define PURPLE "\033[1;38;2;150;111;214m"
+/*FragTrap*/
+# define D_GREEN "\033[1;38;5;22m"
 
 /**Actions**/
 /*Attack*/
