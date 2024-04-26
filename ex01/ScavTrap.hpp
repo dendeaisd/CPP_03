@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 22:59:07 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/26 23:33:14 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/27 00:08:53 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ class ScavTrap : public ClapTrap {
  public:
   ScavTrap();
   ScavTrap(const std::string& newName);
+  ScavTrap(const ScavTrap& other);
+  ScavTrap& operator=(const ScavTrap& other);
   ~ScavTrap();
   void attack(const std::string& target);
   void guardGate();

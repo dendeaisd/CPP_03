@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 22:59:03 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/27 00:05:20 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/27 00:10:22 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,23 @@ ScavTrap::ScavTrap() : ClapTrap("Default") {
   _attackDamage = 20;
   std::cout << PURPLE "ScavTrap default constructor called." \
             << RESET << std::endl;
+}
+
+ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
+  std::cout << PURPLE "ScavTrap copy constructor called." \
+            << RESET << std::endl;
+}
+
+ScavTrap& ScavTrap::operator=(const ScavTrap& other) {
+  std::cout << PURPLE "ScavTrap assignation operator called." \
+            << RESET << std::endl;
+  if (this != &other) {
+    _name = other._name;
+    _hitpoints = other._hitpoints;
+    _energyPoints = other._energyPoints;
+    _attackDamage = other._attackDamage;
+  }
+  return *this;
 }
 
 ScavTrap::ScavTrap(const std::string& newName) : ClapTrap(newName) {
