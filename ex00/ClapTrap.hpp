@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:38:11 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/26 22:24:45 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/26 22:51:27 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,18 +37,19 @@
 class ClapTrap {
 
  private:
-    std::string _name;
-    int _hitpoints;
-    int _energyPoints;
-    int _attackDamage;
+  std::string _name;
+  int _hitpoints;
+  int _energyPoints;
+  int _attackDamage;
 
  public:
-    ClapTrap();
-    ClapTrap(const std::string& newName);
-    ~ClapTrap();
-    void attack(const std::string& target);
-    void takeDamage(unsigned int amount);
-    void beRepaired(unsigned int amount);
+  ClapTrap();
+  ClapTrap(const std::string& newName);
+  ~ClapTrap();
+  int getEnergyPoints() const;
+  void attack(const std::string& target);
+  void takeDamage(unsigned int amount);
+  void beRepaired(unsigned int amount);
 };
 
 #endif

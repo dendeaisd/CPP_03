@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:49:26 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/26 22:41:16 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/26 22:55:15 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,10 +48,11 @@ int main() {
   std::cout << "\n-->";
   std::cout << "CT1 keeps attacking until " \
             << "it runs out of energy:\n";
-  for (int i = 0; i < 10; i++) {
+  while (claptrap1.getEnergyPoints() > 0){
     claptrap1.attack("CT2");
   }
-
+  claptrap1.attack("CT2");
+  
   /*Destructors are called automatically 
     when objects go out of scope*/
   return 0;
