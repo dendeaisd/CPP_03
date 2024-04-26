@@ -6,19 +6,19 @@
 #    By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 18:35:53 by fvoicu            #+#    #+#              #
-#    Updated: 2024/04/27 00:21:46 by fvoicu           ###   ########.fr        #
+#    Updated: 2024/04/27 00:24:41 by fvoicu           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			:= ScavTrap
+NAME			:= FragTrap
 CC				:= c++
 FLAGS			:= -Wall -Wextra -Werror -std=c++98
-SRC				:= main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC				:= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 OBJ				:= $(SRC:.cpp=.o)
 
 # Colors
 CYAN			:= \033[38;5;6m
-GREEN			:= \033[0;32m
+GREEN			:= \033[1;92m
 MAGENTA		:= \033[1;95m
 PURPLE			:= \033[1;38;2;150;111;214m
 RESET			:= \033[0m
@@ -38,7 +38,7 @@ $(NAME)		: $(OBJ)
 	@./spin.sh
 	@printf "$(UP)$(BEGIN)$(CUT)Compiling $@...$(RESET)\n"
 	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
-	@printf "$(UP)$(BEGIN)$(CUT)$(PURPLE)ScavTrap compiled successfully💟$(RESET)\n"
+	@printf "$(UP)$(BEGIN)$(CUT)$(GREEN)FragTrap compiled successfully✅$(RESET)\n"
 	@./progressbar.sh
 
 %.o				: %.cpp
