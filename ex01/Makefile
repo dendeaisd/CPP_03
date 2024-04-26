@@ -6,7 +6,7 @@
 #    By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/24 18:35:53 by fvoicu            #+#    #+#              #
-#    Updated: 2024/04/26 23:02:55 by fvoicu           ###   ########.fr        #
+#    Updated: 2024/04/26 23:05:20 by fvoicu           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ $(NAME)		: $(OBJ)
 	@./spin.sh
 	@printf "$(UP)$(BEGIN)$(CUT)Compiling $@...$(RESET)\n"
 	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
-	@printf "$(UP)$(BEGIN)$(CUT)$(PURPLE)ScavTrap compiled successfully☑️$(RESET)\n"
+	@printf "$(UP)$(BEGIN)$(CUT)$(PURPLE)ScavTrap compiled successfully✅$(RESET)\n"
 	@./progressbar.sh
 
 %.o				: %.cpp

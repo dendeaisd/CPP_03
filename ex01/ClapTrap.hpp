@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:38:11 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/26 22:51:27 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/26 23:27:05 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 /**Robots**/
 /*ClapTrap*/
 # define CYAN "\033[1;36m"
+/*ScavTrap*/
+# define PURPLE "\033[1;38;2;150;111;214m"
 
 /**Actions**/
 /*Attack*/
@@ -36,7 +38,7 @@
 
 class ClapTrap {
 
- private:
+ protected:
   std::string _name;
   int _hitpoints;
   int _energyPoints;
@@ -47,7 +49,7 @@ class ClapTrap {
   ClapTrap(const std::string& newName);
   ~ClapTrap();
   int getEnergyPoints() const;
-  void attack(const std::string& target);
+  virtual void attack(const std::string& target);
   void takeDamage(unsigned int amount);
   void beRepaired(unsigned int amount);
 };
