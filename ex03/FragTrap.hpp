@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 00:26:32 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/27 00:31:06 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/28 18:56:26 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <iostream>
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap {
+class FragTrap : virtual public ClapTrap {
  public:
   FragTrap();
   FragTrap(const std::string& newName);

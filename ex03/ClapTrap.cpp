@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:42:48 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/27 00:13:05 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/28 19:34:11 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
 
 ClapTrap::~ClapTrap() {
   std::cout << CYAN "ClapTrap destructor for "<< _name \
-            << " called." << RESET << std::endl;
+            << " called.\n" << RESET << std::endl;
 }
 
 int ClapTrap::getEnergyPoints() const {
