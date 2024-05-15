@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 22:59:03 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/16 00:45:17 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/16 01:03:36 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
  * @param other A reference to the ScavTrap to be assigned from.
  * @return Returns a reference to this instance after copying.
  */
-
 ScavTrap& ScavTrap::operator=(const ScavTrap& other) {
   std::cout << PURPLE "ScavTrap assignation operator called." \
             << RESET << std::endl;
@@ -74,7 +73,6 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other) {
  * @param newName A std::string representing 
  * the name of the new ScavTrap.
  */
-
 ScavTrap::ScavTrap(const std::string& newName) : ClapTrap(newName) {
   _hitpoints = 100;
   _energyPoints = 50;
