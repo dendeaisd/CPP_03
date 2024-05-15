@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:49:26 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/26 22:55:15 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/15 20:35:30 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,6 @@ int main() {
     claptrap1.attack("CT2");
   }
   claptrap1.attack("CT2");
-  
-  /*Destructors are called automatically 
-    when objects go out of scope*/
+
   return 0;
 }

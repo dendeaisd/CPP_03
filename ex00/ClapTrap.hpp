@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:38:11 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/27 00:14:27 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/15 20:34:44 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,19 @@
 # define REPAIRS GREEN " repairs itself " RESET
 
 
-
+/**
+ * @class ClapTrap
+ * @brief A class simulting ClapTrap, a robotic
+ * fictional character with different capabilities.
+ * 
+ * This class provides private attributes such as 
+ * the name, hit points, energy points and the 
+ * attack damage of the ClapTrap. Furthermore, 
+ * it offers methods for managing these attributes
+ * through interactions like attacking, taking damage, 
+ * and repairing.
+*/
 class ClapTrap {
-
  private:
   std::string _name;
   int _hitpoints;
@@ -48,6 +58,7 @@ class ClapTrap {
   ClapTrap(const ClapTrap& other);
   ClapTrap& operator=(const ClapTrap& other);
   ~ClapTrap();
+
   int getEnergyPoints() const;
   void attack(const std::string& target);
   void takeDamage(unsigned int amount);

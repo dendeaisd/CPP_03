@@ -16,4 +16,4 @@ spin_pid=$!
 sleep 1
 kill $spin_pid 2>/dev/null
 
-printf	"\033[0m"	
+printf	"\033[0m"
