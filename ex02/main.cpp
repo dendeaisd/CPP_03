@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 18:49:26 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/27 00:37:32 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/16 00:47:33 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,7 @@
 
 int main() {
   FragTrap frag("Fraggy");
-
   frag.attack("Target Dummy");
-  frag.takeDamage(20);
-  frag.beRepaired(30);
   frag.highFivesGuys();
 
   return 0;

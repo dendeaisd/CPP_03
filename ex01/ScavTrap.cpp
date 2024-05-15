@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 22:59:03 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/15 22:12:56 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/16 00:46:35 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ ScavTrap::ScavTrap() : ClapTrap("Default") {
  * Duplicates an existing ScavTrap.
  * Prints a messge to the std output.
  * 
- * @param other A reference to the ClapTrap.
+ * @param other A reference to the ScavTrap.
  * to copy.
 */
 ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
@@ -44,7 +44,8 @@ ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other) {
 /**
  * @brief Assignment operator for ScavTrap.
  *
- * Copies all properties from the specified ScavTrap to this instance.
+ * Copies all properties from the specified ScavTrap 
+ * to this instance.
  * Outputs an assignment operator message to standard output.
  * 
  * @param other A reference to the ScavTrap to be assigned from.
@@ -86,7 +87,7 @@ ScavTrap::ScavTrap(const std::string& newName) : ClapTrap(newName) {
 /**
  * @brief Destructor.
  * 
- * Handles clean-up as the ClapTrap object is
+ * Handles clean-up as the ScavTrap object is
  * destroyed.
  * Prints a messge to the std output.
 */
